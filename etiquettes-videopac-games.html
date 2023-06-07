@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Etiquettes for Videopac Games</title>
+	<style>
+
+		tr.number-1c td.number {
+			width: 0.1cm;min-width: 1.6cm;
+		}
+		
+		tr.number-10c td.number {
+			width: 0.2cm; min-width: 3cm;
+		}
+
+		.text div {
+			padding: 0 0.12cm;
+		}
+
+		html,body{
+			height: 100%; width: 100%
+		}
+		table {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: stretch;
+			justify-content: space-evenly;
+			align-content: stretch;
+			border-spacing: 0px;
+		}
+
+		tr {
+			background: #222222;
+			height: 2.4cm;
+			border-collapse: collapse;
+			display: flex;
+			flex-direction: row;
+			width: 8.2cm;
+			align-items: center;
+			font-size: 0.36cm;
+			box-sizing: border-box;
+			border: 0.32cm solid #222222;
+			margin-bottom: 0.2cm;
+			border-left-width: 0.5cm;
+			border-right-width: 0.2cm;
+		}
+
+		.number {
+			/* color: #F44336; */
+			color: #fa3e2e;
+			font-family: "Videopac";
+			font-size: 2.2cm;
+			min-width: 3cm;
+			text-align: left;
+			line-height: 2.2cm;
+		}
+
+		.text {
+			color: white;
+			font-family: Arial;
+			font-weight: bold;
+			display: flex;
+			height: 100%;
+			padding-top: 0.15cm;
+			flex-wrap: wrap;
+		}
+
+		table > tr.multigame > td{
+		    flex-direction: row;
+		}
+
+		.number {
+			padding-bottom: 0.2cm;
+		}
+
+		table > tr.multigame > td.text.direction-column{
+		    /* flex-direction: column; */
+		}
+
+		table > tr.multigame > td.text.direction-row{
+		    flex-direction: row;
+		}
+
+		tr.number-10c td.number {
+			width: 0.2cm;
+			min-width: 3cm;
+		}
+
+		span.translation{
+			color:#ffbfa8;
+			font-style: italic;
+			display: contents;
+    		font-size: 0.31cm;
+		}
+
+</style>
+
+</head>
+
+<body>
+
+
+	<table>
+	</table>
+
+	<script>
+		var data = {
+			"1": {
+				"multigame": true,
+				"title": ["Course de Voitures","Autodrome","Cryptogramme"],
+				"translation": ["Race","Spin-out","Cryptogram"]
+			},
+			"2": {
+				"multigame": true,
+				"title": ["Identification","Rendez-Vous-Spatial","Logique"],
+				"translation": ["Pairs","Space Rendezvous","Logic"]
+			},
+			"3": {
+				"title": "Football américain",
+				"translation": "American Football"
+			},
+			"4": {
+				"multigame": true,
+				"title": ["Bataille Aero-Navale","Combat de chars"],
+				"translation": ["Air-Sea War","Battle"]
+			},
+			"5": {
+				"title": "Black Jack",
+				"translation": "Blackjack"
+			},
+			"6": {
+				"multigame": true,
+				"title": ["Jeu de Quilles","Basket Ball"],
+				"translation": ["Tenpin Bowling","Basketball"]
+			},
+			"7": {
+				"multigame": true,
+				"title": ["Mathématicien","Echo"],
+				"translation": ["Mathematician","Echo"]
+			},
+			"8": {
+				"title": "Baseball",
+				"translation": "Baseball"
+			},
+			"9": {
+				"title": "Programmation",
+				"translation": "Computer Programmer"
+			},
+			"10": {
+				"title": "Golf",
+				"translation": "Golf"
+			},
+			"11": {
+				"title": "Guerre de l'Espace",
+				"translation": "Cosmic Conflict"
+			},
+			"12": {
+				"title": "Prendre l'argent et fuir",
+				"translation": "Take the money and run"
+			},
+			"13": {
+				"title": "Maths amusantes",
+				"translation": "Playschool Maths"
+			},
+			"14": {
+				"title": "Duel",
+				"translation": "Gunfighter"
+			},
+			"15": {
+				"title": "Samurai",
+				"translation": "Samurai"
+			},
+			"16": {
+				"multigame": true,
+				"title": ["Tir sur cible","Bataille sous-marine"],
+				"translation": ["Marksman","Depth Charge"]
+			},
+			"17": {
+				"title": "Logique chinoise",
+				"translation": "Chinese Logic"
+			},
+			"18": {
+				"title": "Guerre laser",
+				"translation": "Laser War"
+			},
+			"19": {
+				"multigame": true,
+				"title": ["Attrape la balle","Morpion"],
+				"translation": ["Catch the ball","Noughts and crosses"]
+			},
+			"20": {
+				"title": "Catapulte",
+				"translation": "Stone Sling"
+			},
+			"21": {
+				"title": "Le Secret des pharaons",
+				"translation": "Secret of the pharaohs"
+			},
+			"22": {
+				"title": "Le monstre de l'espace",
+				"translation": "Space monster"
+			},
+			"23": {
+				"title": "Las Vegas",
+				"translation": "Las Vegas gambling"
+			},
+			"24": {
+				"title": "Billard électronique",
+				"translation": "Flipper game"
+			},
+			"25": {
+				"title": "Faire du ski",
+				"translation": "Skiing"
+			},
+			"26": {
+				"title": "Jeu de paniers",
+				"translation": "Basket game"
+			},
+			"27": {
+				"title": "Football de table électronique",
+				"translation": "Electronic table football"
+			},
+			"28": {
+				"title": "Volley ball électronique",
+				"translation": "Electronic Volleyball"
+			},
+			"29": {
+				"title": "Le mur magique",
+				"translation": "Dam buster"
+			},
+			"30": {
+				"title": "Champ de bataille",
+				"translation": "Battlefield"
+			},
+			"31": {
+				"title": "Musicien",
+				"translation": "Musician"
+			},
+			"32": {
+				"multigame": true,
+				"direction": "column",
+				"title": ["Le Labyrinthe","Superlogique"],
+				"translation": ["A labyrinth game","Supermind"]
+			},
+			"33": {
+				"title": "Les acrobates",
+				"translation": "Jumping acrobats"
+			},
+			"34": {
+				"title": "Les satellites attaquent",
+				"translation": "Satellite attack"
+			},
+			"35": {
+				"title": "Billard Americain",
+				"translation": "Electronic billards"
+			},
+			"36": {
+				"multigame": true,
+				"direction": "column",
+				"title": ["Hockey électronique","Football électronique"],
+				"translation": ["Electronic ice hockey","Electronic soccer"]
+			},
+			"37": {
+				"title": "Singeries",
+				"translation": "Monkeyshines"
+			},
+			"38": {
+				"title": "Glouton et voraces",
+				"translation": "Munchkin"
+			},
+			"39": {
+				"title": "Combattants de la liberté",
+				"translation": "Freedom Fighters"
+			},
+			"40": {
+				"title": "4 en 1 ligne",
+				"translation": "4 in 1 row"
+			},
+			"41": {
+				"title": "La Conquête du Monde",
+				"translation": "Conquest of the World"
+			},
+			"42": {
+				"title": "La Quête des anneaux",
+				"translation": "Quest for the Rings"
+			},
+			"43": {
+				"title": "Peter, Tête de Pioche",
+				"translation": "Pickaxe Pete"
+			},
+			"44": {
+				"title": "Super Glouton",
+				"translation": "Crazy Chase"
+			},
+			"45": {
+				"title": "Morse",
+				"translation": "Morse"
+			},
+			"46": {
+				"title": "The Great Wall Street Fortune Hunt",
+				"translation": "The Great Wall Street Fortune Hunt"
+			},
+			"47": {
+				"title": "Chat et Souris",
+				"translation": "The Mousing Cat"
+			},
+			"48": {
+				"title": "Backgammon",
+				"translation": "Backgammon"
+			}
+		};
+
+		for (number in data) {
+
+			var tr = document.createElement("tr");
+			tr.classList.add("card-number--"+number);
+
+			var eNumber = document.createElement("td");
+			eNumber.classList.add("number");
+			eNumber.innerHTML = number;
+			if(parseInt(number) < 3 && data[number].multigame){
+				tr.classList.add("number-1c");
+			}else
+			if(parseInt(number) < 20){
+				tr.classList.add("number-10c");
+			}
+
+			var eText = document.createElement("td");
+			eText.classList.add("text");
+			if(data[number].direction === "row"){
+				eText.classList.add("direction-row");
+			}
+			if(data[number].direction === "column"){
+				eText.classList.add("direction-column");
+			}
+			if(data[number].multigame){
+				tr.classList.add("multigame");
+				for(game_number in data[number].translation){
+					var div = document.createElement("div");
+					if(data[number].translation[game_number] === data[number].title[game_number]){
+						div.innerHTML = data[number].translation[game_number];
+					}
+					else{
+						div.innerHTML = "<span class=\"translation\">"+data[number].translation[game_number]+"</span>" + "<br>" + data[number].title[game_number];
+					}
+					eText.append(div);
+				}
+			}else{
+				if(data[number].translation === data[number].title){
+					eText.innerHTML = data[number].translation;
+				}
+				else{
+					eText.innerHTML = "<span class=\"translation\">"+data[number].translation+"</span>" + "<br>" + data[number].title;
+				}
+			}
+
+			tr.append(eNumber, eText);
+			document.querySelector("table").append(tr);
+		}
+	</script>
+</body>
+
+</html>
